@@ -5,6 +5,7 @@ import Layout from './Layout';
 import NotFoundPage from './pages/NotFoundPage';
 import { DEFAULT_ORDER, DEFAULT_ORDERBY, getCharacterById, getCharacters } from './api/characters-api';
 import CharacterDetailPage from './pages/CharacterDetailPage';
+import HomePage from './pages/HomePage';
 
 // routes of the application
 const routes = [
@@ -13,8 +14,13 @@ const routes = [
     Component: Layout,
     children: [
       {
-        // main page
+        path: "/",
         index: true,
+        Component: HomePage
+      },
+      {
+        // characters page
+        path: "/characters",
         loader: async ({ request }) => {
           // Get the sort and order query parameters from the URL
           const url = new URL(request.url);
