@@ -45,6 +45,13 @@ test('render CharacterDetailPage component', async () => {
     const imageElement = screen.getByAltText(character.name);
     expect(imageElement).toBeInTheDocument();
     expect(imageElement).toHaveAttribute('src', `${character.thumbnail.path}/standard_large.${character.thumbnail.extension}`);
+
+    // expect to have a heading with the text "Using D3"
+    const h3D3Element = screen.getByRole('heading', { level: 3, name: 'Using D3' });
+    expect(h3D3Element).toBeInTheDocument();
+
+    // expect to have a div with the id "pie-container"
+    expect(document.getElementById('pie-container')).toBeInTheDocument();
     
     // uncomment to see the full DOM output
     // screen.debug()
