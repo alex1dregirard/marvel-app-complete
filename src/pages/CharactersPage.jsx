@@ -28,7 +28,7 @@ const CharactersPage = () => {
     return (
         <>
             <h2>Marvel Characters</h2>
-                        {/* Order by  */}
+            {/* Order by  */}
             <label htmlFor="orderBy">Order by:</label>
             <select id='orderBy' data-testid='orderBy' value={orderBy} onChange={(e) => setOrderBy(e.target.value)}>
                 <option value="name">Name</option>
