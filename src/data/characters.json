@@ -1,15 +1,5 @@
 [
     {
-        "id": "1009175",
-        "name": "Beast",
-        "description": "",
-        "modified": "2014-01-13T14:48:32-0500",
-        "thumbnail": {
-            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
-            "extension": "jpg"
-        }
-    },
-    {
         "id": "1009220",
         "name": "Captain America",
         "description": "Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army. Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty.",
@@ -17,6 +7,31 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 4,
+            "intelligence": 3,
+            "durability": 3,
+            "energy": 1,
+            "speed": 2
+        }
+    },
+    {
+        "id": "1009175",
+        "name": "Beast",
+        "description": "",
+        "modified": "2014-01-13T14:48:32-0500",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
+            "extension": "jpg"
+        },
+        "capacities": {
+            "force": 5,
+            "intelligence": 8,
+            "durability": 6,
+            "energy": 6,
+            "speed": 1,
+            "fighting": 3
         }
     },
     {
@@ -26,6 +41,13 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 4,
+            "intelligence": 3,
+            "durability": 2,
+            "energy": 1,
+            "speed": 2
         }
     },
     {
@@ -36,6 +58,13 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/526033c8b474a",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 6,
+            "intelligence": 1,
+            "durability": 7,
+            "energy": 1,
+            "speed": 1
         }
     },
     {
@@ -46,6 +75,13 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 7,
+            "intelligence": 6,
+            "durability": 7,
+            "energy": 1,
+            "speed": 3
         }
     },
     {
@@ -56,6 +92,13 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 6,
+            "intelligence": 6,
+            "durability": 6,
+            "energy": 6,
+            "speed": 5
         }
     },
     {
@@ -64,8 +107,15 @@
         "description": "A genetically-engineered alien with a knack for big guns and fast ships, Rocket serves as the backbone of the Guardians of the Galaxy!",
         "modified": "2014-07-17T17:32:43-0400",
         "thumbnail": {
-          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
-          "extension": "jpg"
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
+            "extension": "jpg"
+        },
+        "capacities": {
+            "force": 2,
+            "intelligence": 2,
+            "durability": 2,
+            "energy": 1,
+            "speed": 2
         }
     },
     {
@@ -74,8 +124,15 @@
         "description": "When Zenn-La was threatened by the world-devouring entity known as Galactus, Norrin Radd stood up for his home planet and offered to work for Galactus, finding him new planets to eat, in exchange for saving his own. Years later, the Surfer has protected Earth and many other planets, becoming one of the greatest heroes in the universe.",
         "modified": "2013-11-07T10:48:53-0500",
         "thumbnail": {
-          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
-          "extension": "jpg"
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
+            "extension": "jpg"
+        },
+        "capacities": {
+            "force": 6,
+            "intelligence": 4,
+            "durability": 7,
+            "energy": 7,
+            "speed": 7
         }
     },
     {
@@ -85,12 +142,30 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/5274137e3e2cd",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 7,
+            "intelligence": 6,
+            "durability": 6,
+            "energy": 7,
+            "speed": 6
         }
     },
     {
         "id": "1009663",
         "name": "Thor",
-        "modified": "2020-03-11T10:18:57-0400"
+        "modified": "2020-03-11T10:18:57-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350",
+            "extension": "jpg"
+        },
+        "capacities": {
+            "force": 7,
+            "intelligence": 2,
+            "durability": 7,
+            "energy": 6,
+            "speed": 7
+        }
     },
     {
         "id": "1009718",
@@ -99,6 +174,13 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 4,
+            "intelligence": 2,
+            "durability": 4,
+            "energy": 1,
+            "speed": 2
         }
     }
 ]

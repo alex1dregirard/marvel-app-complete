@@ -2,7 +2,7 @@
 
 import { describe, expect, test } from '@jest/globals'
 import '@testing-library/jest-dom'
-import { act, render, screen, within } from '@testing-library/react'
+import { act, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createRoutesStub } from 'react-router'
 import CharactersPage from './CharactersPage'
