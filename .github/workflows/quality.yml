@@ -4,6 +4,8 @@ on:
   pull_request:
 jobs:
   sonarcloud:
+    # don't run on dependabot branches
+    if: github.actor != 'dependabot[bot]'
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
