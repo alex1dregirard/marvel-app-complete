@@ -1,7 +1,8 @@
 import { describe, expect, jest, test } from '@jest/globals'
+import fetchMock from 'fetch-mock';
 
 import { getCharacters, getCharacterById } from './characters-api';
-import characters from '../data/characters.json';
+// import characters from '../data/characters.json';
 
 const characterOne = {
   id: 1,
@@ -25,12 +26,13 @@ const characterFour = {
 };
 
 // Mock the characters data for testing purposes
-jest.mock('../data/characters.json', () => [
-    characterOne,
-    characterTwo,
-    characterThree,
-    characterFour,
-]);
+fetchMock.mockGlobal();
+fetchMock.get('/characters.json', JSON.stringify([
+  characterOne,
+  characterTwo,
+  characterThree,
+  characterFour,
+]));
 
 // Test suite for characters-api.js
 describe('characters-api', () => {
@@ -39,20 +41,23 @@ describe('characters-api', () => {
     describe('getCharacters', () => {
         // Test to check if the function returns the full list of characters sorted by name in ascending order by default
         test('should return the list of characters sorted by name in ascending order by default', () => {
-            const result = getCharacters();
-            expect(result).toEqual([characterFour, characterOne, characterThree, characterTwo]);
+            getCharacters().then(characters => {
+                expect(characters).toEqual([characterFour, characterOne, characterThree, characterTwo]);
+            });
         });
 
         // Test to check if the function returns the list of characters sorted by name in descending order
         test('should return the list of characters sorted by name in descending order', () => {
-            const result = getCharacters('name', 'desc');
-            expect(result).toEqual([characterTwo, characterThree, characterOne, characterFour]);
+            getCharacters('name', 'desc').then(characters => {
+                expect(characters).toEqual([characterTwo, characterThree, characterOne, characterFour]);
+            });
         });
 
         // Test to check if the function returns the list of characters sorted by modified date in ascending order
         test('should return the list of characters sorted by modified date in ascending order', () => {
-            const result = getCharacters('modified', 'asc');
-            expect(result).toEqual([characterThree, characterTwo, characterOne, characterFour]);
+            getCharacters('modified', 'asc').then(characters => {
+                expect(characters).toEqual([characterThree, characterTwo, characterOne, characterFour]);
+            });
         });
     });
 
@@ -60,13 +65,17 @@ describe('characters-api', () => {
     describe('getCharacterById', () => {
         // Test to check if the function returns the correct character for a valid ID
         test('should return the correct character when a valid ID is provided', () => {
-            const result = getCharacterById(1);
-            expect(result).toEqual(characterOne);
+            getCharacterById(1).then(character => {
+                expect(character).toEqual(characterOne);
+            });
         });
 
         // Test to check if the function throws an error for an invalid ID
         test('should throw an error when an invalid ID is provided', () => {
-            expect(() => getCharacterById(999)).toThrow('Character with id 999 not found');
+            getCharacterById(999).catch(error => {
+                expect(error).toBeInstanceOf(Error);
+                expect(error.message).toBe('Character with id 999 not found');
+            });
         });
     });
 
