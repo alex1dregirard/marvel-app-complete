@@ -29,15 +29,17 @@ const routes = [
           const orderBy = searchParams.get("orderBy") || DEFAULT_ORDERBY
           const order = searchParams.get("order") || DEFAULT_ORDER
 
-          return { characters: getCharacters(orderBy, order) };
+          const characters = await getCharacters(orderBy, order);
+          
+          return { characters };
         },
         Component: CharactersPage
       },
       {
           path: "/characters/:id",
           Component: CharacterDetailPage,
-          loader: ({ params }) => {
-            return { character: getCharacterById(params.id) };
+          loader: async ({ params }) => {
+            return { character: await getCharacterById(params.id) };
           }
       },
       {
