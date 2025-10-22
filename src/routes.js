@@ -6,12 +6,14 @@ import NotFoundPage from './pages/NotFoundPage';
 import { DEFAULT_ORDER, DEFAULT_ORDERBY, getCharacterById, getCharacters } from './api/characters-api';
 import CharacterDetailPage from './pages/CharacterDetailPage';
 import HomePage from './pages/HomePage';
+import Loading from './components/Loading';
 
 // routes of the application
 const routes = [
   {
     path: "/",
     Component: Layout,
+    HydrateFallback: Loading,
     children: [
       {
         path: "/",
