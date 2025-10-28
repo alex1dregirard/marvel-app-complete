@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.27.1",
-    "@babel/preset-env": "^7.28.3",
-    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-env": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.38.0",
@@ -32,9 +32,9 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "^5.1.0",
     "eslint": "^9.38.0",
-    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
@@ -42,6 +42,6 @@
     "jest-environment-jsdom": "^30.2.0",
     "jest-fixed-jsdom": "^0.0.10",
     "jest-sonar-reporter": "^2.0.0",
-    "vite": "^7.1.10"
+    "vite": "^7.1.12"
   }
 }
