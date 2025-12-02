@@ -18,7 +18,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.9.4",
-    "recharts": "^2.15.0"
+    "recharts": "^3.5.1"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.27.1",
