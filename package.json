@@ -16,7 +16,7 @@
     "d3": "^7.9.0",
     "devmoji": "^2.3.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.2.1",
     "react-router": "^7.9.4",
     "recharts": "^2.15.0"
   },
@@ -31,7 +31,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
+    "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.38.0",
     "eslint-plugin-react-hooks": "^7.0.0",
